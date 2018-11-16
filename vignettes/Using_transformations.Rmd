@@ -1,5 +1,5 @@
 ---
-title: "Vector Transformation"
+title: "Power Transformations"
 author: "Zeid Hamadeh"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -9,20 +9,20 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
+Lets start by loading our package and loading the gapminder dataset as a sample dataset. 
+
+```{r}
+library(powers)
+library(gapminder)
 ```
 
 This package offers two unique functions to transform your data. The `log_trans()` method performs a logarithmic transformation on your vector like so:
 
 ```{r}
-log_trans(9,2)
+log_trans(9,3)
 ```
 
-Additionally, there is the `boxcox()` method for transforming your non-normal data into a more normal distribution 
+Additionally, there is the `boxcox()` method for transforming your non-normal data into a more normal distribution. It takes in a numerical vector, finds the most optimal lambda to perform a box-cox transformation and then uses that lambda value to do so.
 
 ```{r}
 boxcox(gapminder$lifeExp)
