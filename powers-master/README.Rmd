@@ -14,9 +14,9 @@ knitr::opts_chunk$set(
 
 [![Build Status](https://travis-ci.org/vincenzocoia/powers.svg?branch=master)](https://travis-ci.org/vincenzocoia/powers)
 
-# powers
+# Powers package
 
-This is an R package that gives `sqrt()` friends by providing other power functions.
+This is an R package that gives multiple power functions such as `sqrt()`, `log_trans()` and `boxcox()`.
 
 ## Installation
 
@@ -24,7 +24,7 @@ You can install powers from github with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("vincenzocoia/powers")
+devtools::install_github("STAT545-UBC-students/hw07-zhamadeh")
 ```
 
 ## Example
@@ -32,11 +32,9 @@ devtools::install_github("vincenzocoia/powers")
 See the vignette for more extensive use, but here's an example:
 
 ```{r example}
-powers::reciprocal(2)
+powers::log_trans(9,3)
 ```
 
 ## For Developers
-
-(Again, I don't actually intend for anyone to develop this silly package, but if I did, here's what I'd write.)
 
 Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, and `reciprocal`. 
