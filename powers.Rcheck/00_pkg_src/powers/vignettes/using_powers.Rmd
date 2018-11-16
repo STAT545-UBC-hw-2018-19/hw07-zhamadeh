@@ -1,6 +1,6 @@
 ---
-title: "How to use the `powers` package"
-author: "Zeid Hamadeh"
+title: "Using the `powers` package"
+author: "Vincenzo Coia"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -30,11 +30,4 @@ cube(1:10)
 reciprocal(1:10)
 ```
 
-Or try the box-cox transformation with the `boxcox()` method. 
-
-```{r}
-library(gapminder)
-
-boxcox(gapminder$lifeExp)
-```
 

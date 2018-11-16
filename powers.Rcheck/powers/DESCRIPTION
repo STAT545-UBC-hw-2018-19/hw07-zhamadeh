@@ -11,9 +11,12 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
-Suggests: testthat,
-    knitr,
-    rmarkdown
+Suggests: testthat, knitr, rmarkdown
 Imports: ggplot2
 VignetteBuilder: knitr
 Depends: R(>= 2.10.0)
+NeedsCompilation: no
+Packaged: 2018-11-16 03:11:27 UTC; zeidh
+Author: Zeid Hamadeh [aut, cre]
+Maintainer: Zeid Hamadeh <zhamadeh@bccrc.ca>
+Built: R 3.5.1; ; 2018-11-16 03:11:30 UTC; unix

@@ -1,0 +1,30 @@
+---
+title: "Vector Transformation"
+author: "Zeid Hamadeh"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This package offers two unique functions to transform your data. The `log_trans()` method performs a logarithmic transformation on your vector like so:
+
+```{r}
+log_trans(9,2)
+```
+
+Additionally, there is the `boxcox()` method for transforming your non-normal data into a more normal distribution 
+
+```{r}
+boxcox(gapminder$lifeExp)
+```
+
