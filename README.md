@@ -10,7 +10,7 @@ This is an R package that gives multiple power functions such as `sqrt()`, `log_
 Installation
 ------------
 
-You can install powers from github with:
+You can install powers from github by first installing the `devtools` package and using the `install_github()` method like so:
 
 ``` r
 # install.packages("devtools")
