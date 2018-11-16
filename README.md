@@ -1,9 +1,9 @@
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Build Status](https://travis-ci.org/vincenzocoia/powers.svg?branch=master)](https://travis-ci.org/vincenzocoia/powers)
-
 Powers package
-==============
+================
+Zeid Hamadeh
+2018-11-15
+
+[![Build Status](https://travis-ci.org/vincenzocoia/powers.svg?branch=master)](https://travis-ci.org/vincenzocoia/powers)
 
 This is an R package that gives multiple power functions such as `sqrt()`, `log_trans()` and `boxcox()`.
 
