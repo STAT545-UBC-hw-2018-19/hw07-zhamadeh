@@ -1,4 +1,5 @@
 #' Apply a box cox transformation
+#'
 #' This function helps make non-normal data more normally distributed via a box cox transformation
 #'
 #' @param x The vector to be transformed
